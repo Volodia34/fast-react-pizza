@@ -39,7 +39,7 @@ function Cart() {
 
   return (
     <div className='px-4 py-3'>
-      <LinkButton to="/menu">&larr; Back to menu</LinkButton>
+      <LinkButton to="/fast-react-pizza/menu">&larr; Back to menu</LinkButton>
 
       <h2 className='texy-xl font-semibold border-b mt-7'>Your cart, {username}</h2>
 
@@ -48,7 +48,7 @@ function Cart() {
       </ul>
 
       <div className='mt-6 space-x-2 flex'>
-        <Button to='/order/new' type='prymary'>Order pizzas</Button>
+        <Button to='/fast-react-pizza/order/new' type='prymary'>Order pizzas</Button>
         <Button type='secondary' onClick={() => dispatch(clearCart())}>Clear cart</Button>
       </div>
     </div>

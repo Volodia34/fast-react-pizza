@@ -14,26 +14,26 @@ const router = createBrowserRouter([
         errorElement: <Error/>,
         children: [
             {
-                path: '/',
+                path: 'fast-react-pizza',
                 element: <Home/>
             },
             {
-                path: '/menu',
+                path: 'fast-react-pizza/menu',
                 element: <Menu/>,
                 loader: menuLoader,
                 errorElement: <Error/>
             },
             {
-                path: '/cart',
+                path: 'fast-react-pizza/cart',
                 element: <Cart/>
             },
             {
-                path: '/order/new',
+                path: 'fast-react-pizza/order/new',
                 element: <CreateOrder/>,
                 action: createOrderAction
             },
             {
-                path: '/order/:orderId',
+                path: 'fast-react-pizza/order/:orderId',
                 element: <Order/>,
                 loader: orderLoader,
                 errorElement: <Error/>,
